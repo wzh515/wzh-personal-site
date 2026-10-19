@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "category": "前端开发",
+      "icon": "code",
+      "skills": [
+        { "name": "React", "level": 90, "icon": "atom" },
+        { "name": "TypeScript", "level": 85, "icon": "braces" },
+        { "name": "CSS / Tailwind", "level": 88, "icon": "palette" },
+        { "name": "Vue", "level": 75, "icon": "layers" }
+      ]
+    },
+    {
+      "category": "后端开发",
+      "icon": "server",
+      "skills": [
+        { "name": "Node.js", "level": 82, "icon": "terminal" },
+        { "name": "Python", "level": 70, "icon": "server" },
+        { "name": "数据库 / SQL", "level": 75, "icon": "database" }
+      ]
+    },
+    {
+      "category": "工程化与工具",
+      "icon": "wrench",
+      "skills": [
+        { "name": "Git / CI", "level": 85, "icon": "git" },
+        { "name": "Docker", "level": 70, "icon": "boxes" },
+        { "name": "Vite / Webpack", "level": 80, "icon": "rocket" }
+      ]
+    }
+  ]
+}

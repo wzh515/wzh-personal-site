@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+/* ============ 主题变量（设计规范集中配置源） ============ */
+@theme {
+  /* 配色：深色主题 */
+  --color-bg: #0B0F1A;      /* 背景色 */
+  --color-fg: #E6EAF2;      /* 文字主色 */
+  --color-muted: #9AA3B2;   /* 文字次要色 */
+  --color-accent: #6C8CFF;  /* 强调色（可在此一处修改，全局生效） */
+
+  /* 圆角：统一 12~16px */
+  --radius-card: 16px;
+  --radius-control: 12px;
+
+  /* 断点（保持 Tailwind 默认 sm/md/lg 语义） */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* 统一缓动函数：所有过渡/动画使用 */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============ 全局基础样式 ============ */
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  /* 验收硬指标：移动端无横向滚动 */
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 锚点定位时补偿吸顶导航高度 */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* 尊重系统"减少动画"偏好：全局减弱非必要动画 */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============ Markdown 正文样式（项目详情 / 博客通用） ============ */
+.markdown {
+  line-height: 1.75;
+  color: var(--color-fg);
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.3;
+  /* 锚点跳转时补偿吸顶导航高度 */
+  scroll-margin-top: 80px;
+}
+
+.markdown h1 {
+  font-size: 1.75em;
+}
+
+.markdown h2 {
+  font-size: 1.5em;
+}
+
+.markdown h3 {
+  font-size: 1.25em;
+}
+
+.markdown p {
+  margin: 0.75em 0;
+}
+
+.markdown ul,
+.markdown ol {
+  margin: 0.75em 0;
+  padding-left: 1.5em;
+  list-style: disc;
+}
+
+.markdown ol {
+  list-style: decimal;
+}
+
+.markdown li {
+  margin: 0.25em 0;
+}
+
+.markdown a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.markdown code {
+  padding: 0.1em 0.35em;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.markdown pre {
+  margin: 1em 0;
+  padding: 1em;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.markdown pre code {
+  padding: 0;
+  background: transparent;
+}
+
+.markdown blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 3px solid var(--color-accent);
+  color: var(--color-muted);
+}

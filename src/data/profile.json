@@ -1,0 +1,44 @@
+{
+  "name": "王子涵",
+  "title": "软件工程专业在校生",
+  "tagline": "热爱前端开发，喜欢动手做各类Web小项目。",
+  "avatar": "/avatar.jpg",
+  "email": "2438816550@qq.com",
+  "location": "中国 · 大连",
+  "bio": [
+    "我是一名软件工程专业在校学生，主要学习前端Web开发技术，熟悉React、TypeScript等技术栈。",
+    "平时喜欢做课程项目与Chrome浏览器扩展开发，注重代码规范，不断积累实战经验。"
+  ],
+  "resume": "/resume.pdf",
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/wzh515",
+      "icon": "github"
+    },
+    {
+      "name": "邮箱",
+      "url": "mailto:2438816550@qq.com",
+      "icon": "mail"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "period": "2025‑09‑至今",
+      "title": "课程实训项目",
+      "org": "企业实训",
+      "description": "完成Chrome电商图片提取浏览器扩展开发，实现图片提取、预览批量下载PNG功能。",
+      "tags": ["Chrome扩展", "MV3", "JavaScript"]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "period": "2023.09‑至今",
+      "title": "软件工程 · 本科",
+      "org": "大连海事大学",
+      "description": "主修Web前端、数据库等课程，参与多个课程实战项目。"
+    }
+  ]
+}

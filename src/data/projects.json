@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "id": "portfolio-site",
+      "title": "个人展示网站",
+      "cover": "/projects/project-1.jpg",
+      "description": "深色主题个人站点，Canvas星空粒子背景，React + TypeScript构建，多端自适应。",
+      "tags": ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      "links": {
+        "github": "https://github.com/wzh515/wzh-personal-site"
+      },
+      "detail": "## 项目简介\n这是一个深色主题的个人展示网站，包含个人介绍、技能、项目与博客模块。\n\n## 技术亮点\n- Canvas 星空粒子背景，移动端自动降低粒子数量\n- 响应式布局，单列 / 两列 / 三列自适应\n- 毛玻璃吸顶导航，锚点平滑滚动\n\n## 我的职责\n- 独立完成前端架构与全部功能开发\n- 性能与无障碍优化"
+    },
+    {
+      "id": "vuln-detect-platform",
+      "title": "智能漏洞检测Web平台",
+      "cover": "/projects/project-2.jpg",
+      "description": "二进制漏洞检测研究成果工程化落地平台，集成大模型智能分析，实现漏洞检测、风险评估、修复建议全流程可视化。",
+      "tags": ["Python", "Web开发", "漏洞检测", "大模型应用"],
+      "links": {},
+      "detail": "## 项目简介\n本项目是二进制同源漏洞检索算法研究成果的工程化落地：后端基于Python深度学习模型，使用Web框架封装为服务；前端开发可视化交互页面，集成大模型智能分析能力，搭建集漏洞检测、风险评估、修复建议输出于一体的完整Web平台。\n\n## 技术亮点\n- 对接后端漏洞检测模型API，完成前后端数据交互\n- 可视化呈现漏洞检测结果、风险等级与修复建议\n- 支持测试用例管理与运行异常记录\n\n## 我的职责\n- 参与平台后端开发与功能模块测试\n- 设计多组测试用例，记录平台运行异常\n- 整理测试问题反馈，配合团队迭代平台功能"
+    },
+    {
+      "id": "hotel-booking-app",
+      "title": "酒店预定Android移动端应用",
+      "cover": "/projects/project-3.jpg",
+      "description": "基于Java与Android SDK开发的多角色酒店预订APP，实现用户预订、收藏、订单管理与管理员房源全流程业务。",
+      "tags": ["Java", "Android SDK", "Room本地数据库"],
+      "links": {},
+      "detail": "## 项目简介\n移动应用开发实践课程项目，使用Java + Android SDK + Room本地数据库开发多角色酒店预订APP，覆盖用户端与管理员端全流程业务。\n\n## 技术亮点\n- 基于Room本地数据库完成本地数据持久化存储\n- 实现用户预订、收藏、订单管理全流程业务\n- 支持管理员房源信息管理与维护\n\n## 我的职责\n- 完成需求建模与数据库设计\n- 参与核心业务模块开发与测试\n- 输出完整项目设计报告"
+    }
+  ]
+}
